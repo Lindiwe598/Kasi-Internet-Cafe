@@ -48,6 +48,7 @@ h1,h2,h3,h4 {
 
 h1 {
     font-size:large;
+    justify-content:center;
 }
 
 h2{
@@ -109,5 +110,71 @@ card:hover{
 
 a:hover{
     color:var(--primary);
+}
+
+input:focus, textarea:focus{
+    border-color:var(--primary);
+    box-shadoow: 0 0 0 3px rgba(37,99,235,0.1);
+    outline:none;
+}
+
+.container{
+    max-width:1200px;
+    margin:0auto;
+    padding:0.1px;
+}
+
+.header{
+    display: flex;
+    gap: 2px;
+    list-style:none;
+}
+
+.grid-2{
+    display: grid;
+    grid-template-column:repeat(2, 1fr);
+    gap:3px;
+}
+
+.hero{
+    display: flex;
+    flex-direction:column;
+    justify-cotent: center;
+    min-height:80vh;
+    text-align: center;
+}
+
+image{
+    max-width:100% ;
+    height:auto;
+    display:block;
+    border-radius:8px;
+}
+
+@media(max-width:768px){
+    .grid-3, .grid-2{
+        grid-template-columns: 1fr;
+    }
+
+    .nav{
+        position: fixed;
+        top: 70px;
+        left:0;
+        right:0;
+        flex-direction:column;
+        background-color:white;
+        padding:2px;
+        transform:translateX(-100%);
+    }
+}
+
+@media(max-width:480px){
+    body{
+        font-size:15px;
+    }
+
+    .container{
+        padding:0 1px;
+    }
 }
 
