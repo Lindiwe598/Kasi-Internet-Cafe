@@ -3,3 +3,111 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+:root{
+    --primary: #2563eb;
+    --dark:#0f172a;
+    --light:#f8faac;
+    gray: #64748b;
+    --border:#e2e8f0;
+}
+
+body{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+body{
+    font-size:12px;
+}
+
+body{
+    color:var(--dark);
+}
+
+body{
+    background-color:beige;
+}
+
+body{
+    line-height:1.6;
+    margin:0;
+    padding:0;
+}
+
+h1,h2,h3,h4{
+    font-weight:500;
+}
+
+h1,h2,h3,h4{
+    line-heignt:1.2;
+}
+
+h1,h2,h3,h4 {
+    letter-spacing:normal;
+}
+
+h1 {
+    font-size:large;
+}
+
+h2{
+    font-size:medium;
+}
+
+p{
+    font-size:11px;
+}
+
+p{
+    line-height:1.6;
+}
+
+p{
+    letter-spacing:normal;
+}
+
+button{
+    background-color:var(--primary0);
+}
+
+card{
+    border:1px solid var(--border);
+}
+
+card{
+    box-shadow:inset 0 4px 6px rgba(0,0,0,0,0.05);
+}
+
+card{
+    border-radius:12px;
+    padding:2px;
+}
+
+button{
+    color:var(--white);
+}
+
+button{
+    border:none;
+    border-radius:8px;
+}
+
+button:hover{
+    background-color:var(--primary);
+    box-shadow:inset 0 10px 15px rgba(37,99,235,0.3);
+    transform:translateY(-2px);
+}
+
+button:active{
+    tranform:translateY(0);
+}
+
+card:hover{
+    box-shadow:inset 0 2px 25px rgba(0,0,0,0.1);
+    transform: translateY(-4px);
+}
+
+a:hover{
+    color:var(--primary);
+}
+
