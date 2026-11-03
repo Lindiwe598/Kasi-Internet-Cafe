@@ -69,7 +69,7 @@ document.getElementById("contactForm").addEventListener("submit", function(e){
 function showOffer(){alert("Internt/ computer use: R10 per hour,printing black and white: R3 per page and color: R6, scanning: R5 per page, photocopying: R2 per page, faxing: R10 per page");}
 
 //gallery
-function showGallery(){
+  function showGallery(){
     let galleryImages = [
         "images/gallery1.jpg",
         "images/gallery2.jpg",
@@ -78,31 +78,9 @@ function showGallery(){
         "images/gallery5.jpg",
         "images/gallery6.jpg"
     ];
-
-    //dynamic content
-    let hour = new Date().getHours();
-    let greeting;
-
-    if (hour < 12) {
-        greeting = "Good morning!";
-    } else if (hour < 18) {
-        greeting = "Good afternoon!";
-    } else {
-        greeting = "Good evening!";
-    }
-
-    // Display the greeting
-    alert(greeting);
 }
 
-//search 
-function searchCafe() {
-    let searchInput = document.getElementById("searchInput").value.toLowerCase();
-    let searchResults = document.getElementById("searchResults");
-    searchResults.innerHTML = ""; // Clear previous results
-}
-
-  // Gallery search and lightbox
+      // Gallery search and lightbox
   const gallerySearch = document.querySelector("#gallery-search");
   const galleryItems = [...document.querySelectorAll(".gallery-item")];
   const galleryCount = document.querySelector("#gallery-count");
@@ -158,4 +136,28 @@ function searchCafe() {
       if (event.key === "ArrowLeft") showImage(currentIndex - 1);
       if (event.key === "ArrowRight") showImage(currentIndex + 1);
     });
-  }
+ 
+    //search 
+    function searchCafe() {
+    let searchInput = document.getElementById("searchInput").value.toLowerCase();
+    let searchResults = document.getElementById("searchResults");
+    searchResults.innerHTML = ""; // Clear previous results
+ }
+
+    //dynamic content
+    let hour = new Date().getHours();
+    let greeting;
+
+    if (hour < 12) {
+        greeting = "Good morning!";
+    } else if (hour < 18) {
+        greeting = "Good afternoon!";
+    } else {
+        greeting = "Good evening!";
+    }
+
+    // Display the greeting
+    alert(greeting);
+}
+
+
